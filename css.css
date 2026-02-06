@@ -1,0 +1,50 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#f3f4f6;color:#111827}
+.container{height:100vh;display:flex;justify-content:center;align-items:center;padding:15px}
+.card{background:#fff;width:100%;max-width:420px;padding:25px;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+.logo{text-align:center;font-size:28px;font-weight:700}
+.logo span{color:#2563eb}
+.subtitle{text-align:center;margin:10px 0 20px;font-size:14px;color:#6b7280}
+.tabs{display:flex;gap:10px;margin-bottom:20px}
+.tab{flex:1;padding:10px;border:none;background:#e5e7eb;cursor:pointer;border-radius:8px;font-weight:600}
+.tab.active{background:#2563eb;color:#fff}
+.form{display:none}
+.active-form{display:block}
+.form-group{margin-bottom:14px}
+label{font-size:14px;font-weight:600;margin-bottom:6px;display:block}
+input,textarea,select{width:100%;padding:10px;border:1px solid #d1d5db;border-radius:8px;outline:none}
+textarea{height:80px;resize:none}
+.btn{width:100%;padding:12px;border:none;border-radius:8px;background:#2563eb;color:#fff;font-weight:700;cursor:pointer;transition:.2s}
+.btn:hover{background:#1e40af}
+.btn.small{width:auto;padding:8px 14px}
+.msg{margin-top:10px;text-align:center;color:#dc2626;font-size:14px}
+
+/* Dashboard */
+.navbar{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:15px 25px;box-shadow:0 3px 12px rgba(0,0,0,.06)}
+.navbar span{color:#2563eb}
+.nav-right{display:flex;align-items:center;gap:15px}
+
+.dashboard{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:25px}
+.dashboard .card{max-width:100%}
+
+.filters{display:flex;gap:10px;margin:12px 0;flex-wrap:wrap}
+.filters select,.filters input{flex:1;min-width:140px}
+
+.task-list{display:flex;flex-direction:column;gap:12px}
+.task{border:1px solid #e5e7eb;border-radius:10px;padding:14px}
+.task h4{font-size:18px;margin-bottom:6px}
+.task p{font-size:14px;color:#6b7280;margin-bottom:8px}
+
+.badge{display:inline-block;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:700;color:#fff}
+.pending{background:#f59e0b}
+.progress{background:#3b82f6}
+.completed{background:#10b981}
+
+.task-actions{margin-top:10px;display:flex;gap:10px}
+.task-actions button{flex:1;padding:8px;border:none;cursor:pointer;border-radius:8px;font-weight:700}
+.edit-btn{background:#22c55e;color:#fff}
+.del-btn{background:#ef4444;color:#fff}
+
+@media (max-width:850px){
+  .dashboard{grid-template-columns:1fr}
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager | Auth</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="logo">Task<span>Manager</span></h1>
+      <p class="subtitle">Login or Register to continue</p>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button type="button" class="tab active" id="loginTab">Login</button>
+        <button type="button" class="tab" id="registerTab">Register</button>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <form id="loginForm" class="form active-form">
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" placeholder="Enter email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" placeholder="Enter password" required />
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+
+      <!-- REGISTER FORM -->
+      <form id="registerForm" class="form">
+        <div class="form-group">
+          <label for="regName">Name</label>
+          <input type="text" id="regName" placeholder="Enter name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="regEmail">Email</label>
+          <input type="email" id="regEmail" placeholder="Enter email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="regPassword">Password</label>
+          <input type="password" id="regPassword" placeholder="Create password" required />
+        </div>
+
+        <button type="submit" class="btn">Create Account</button>
+      </form>
+
+      <!-- Message -->
+      <p id="authMsg" class="msg"></p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
